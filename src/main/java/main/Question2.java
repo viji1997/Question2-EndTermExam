@@ -1,6 +1,7 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.ArrayList.*;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
@@ -20,8 +21,13 @@ public static void main(String[] args) {
 
 }
 public List<Integer> listWithDuplicates(List<Integer> number){
-	List <Integer> L1 = null;
-	//write your code here !! change the L1 to required value
+	List <Integer> L1 = new ArrayList<Integer>();
+	int len =number.size();
+	for(int j=0; j<len; j++)
+	{
+		L1.add(number.get(j));
+		
+	}
 	return L1 ;
 }
 }
